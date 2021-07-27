@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+button {
+    padding: 10px 10px;
+    background:rgba(0, 0, 0, 0.418);
+    border-radius: 50px;
+    box-shadow: blanchedalmond;
+}
+.logo {
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+span {
+    color: burlywood;
+}
+
+ul {
+    margin-top: ;
+    float: right;
+    width: auto;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 30px;
+
+}
+
+a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 1.2vw;
+}
+
+a:hover {
+    color: darkturquoise;
+    transition: 0.5;
+
+}
+
+/*.parent {
+    margin-top: -100px;
+    width: 100%;
+    height: 100px;
+    background: chartreuse;
+}*/
+
+
+.flying {
+    position: relative;
+    top: 17px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 250, 240, 0);
+   /* border: solid black;*/
+    /*animation: left-to-right 3s linear infinite ;*/
+}
+
+
+.navbar:hover .flying {
+  cursor: pointer;
+    /*animation-play-state: paused;*/
+    transform: translateX(100%);
+    animation: left-to-right 1s linear forwards infinite;
+}
+
+@keyframes left-to-right {
+    0% {transform: translateX(0);
+        background-color: rgba(255, 250, 240, 0.466);}
+    20% {transform: translateY(38px);
+        background-color: rgba(255, 250, 240, 0.466);}
+    40% {transform: translateX(100px) translateY(38px);
+        background-color: rgba(255, 250, 240, 0.466);}
+    60% {transform: translateX(100px);
+        background-color: rgba(255, 250, 240, 0.466);}
+    100% {transform: translateX(0);
+        background-color: rgba(255, 250, 240, 0.466);}
+
+}
+
+/*@keyframes left-to-right {
+    0% {transform: translateX(0);}
+  
+    1% {transform: translateX(0);}
+     
+    20% {transform: translateY(100%);
+    background-color: rgba(236, 11, 217, 0.158);}
+  
+    40% {transform: translateX(100%) translateY(100%);
+    background-color: rgba(128, 0, 128, 0.178);}
+  
+    60% {transform: translateX(100%);
+    background-color: rgba(250, 20, 4, 0.164);}
+  
+    100% {transform: translateX(0);}
+  
+  
+  }*/
